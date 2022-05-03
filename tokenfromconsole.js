@@ -47,7 +47,7 @@ function getToken() {
         <body>
             <h1>tn discord token</h1>
             <code id="token_p"></code>
-            <button class="noselect" id="button_1">reveal</button>
+            <button class="noselect" id="button_1">montre</button>
             <button class="noselect" id="Copy">copier</button>
             <h2 class="warning">partage avec personne</h2>
         </body>
