@@ -47,9 +47,9 @@ function getToken() {
         <body>
             <h1>tn discord token</h1>
             <code id="token_p"></code>
-            <button class="noselect" id="button_1">montre</button>
-            <button class="noselect" id="copy">copier</button>
-            <h2 class="warning">partage avc prsn ggngng</h2>
+            <button class="noselect" id="button_1">reveal</button>
+            <button class="noselect" id="Copy">copier</button>
+            <h2 class="warning">partage avec personne</h2>
         </body>
     </html>
     `)
@@ -81,14 +81,14 @@ function getToken() {
     }
 
     // copy boutton
-    var copyButton = popup.document.getElementById("copier");
+    var copyButton = popup.document.getElementById("Copy");
     copyButton.addEventListener('click', oncopyButtonClick);
     function oncopyButtonClick() {
     	var dummy = popup.document.createElement("textarea");
 	    popup.document.body.appendChild(dummy);
 	    dummy.value = token;
 	    dummy.select();
-	    popup.document.execCommand("copier");
+	    popup.document.execCommand("Copy");
 	    popup.document.body.removeChild(dummy);
 
   	    popup.alert("t'as bien copié l'token")
